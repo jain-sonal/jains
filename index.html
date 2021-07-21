@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+</head>
+<style>
+    body{
+        background-color: rgb(20, 109, 109);
+        background-image: center;
+        text-align: center;
+        margin: 80px;
+        font-family:cursive;
+        background-blend-mode: darken;
+        
+
+    }
+    #title{
+        background-color: rgb(0,0,0,6);
+        color:#FFFFFF;
+        width:800px;
+        margin:auto;
+        text-align: center;
+        padding:10px 0px 10px 0px;
+        border-radius:15px 15px 0px 0px;
+    }
+    .main-content{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .main-content input{
+        display: flex;
+        justify-content:center;
+        margin:12px;
+    }
+    #sona{
+        color:white;
+    }
+    h3{
+        font-size: 30px;
+    }
+
+    #survey-form{
+     position: relative;
+     border:solid;
+     padding:40px 350px 40px 200px;
+     margin: auto;
+     text-align: center;
+     border-radius: 20px;
+     box-sizing: border-box;
+     background-color: rgb(0,0,0,0.5);
+     transition:0.25px;
+    
+    }
+    
+    #survey-form input,
+    #survey-form textarea{
+        width:100%;
+        padding:0.5rem;
+    }
+    #survey-form::before{
+         content:"";
+        position: absolute;
+
+    }
+    label{
+        display: flex;
+        justify-content: left;
+        font-weight: 700px;
+        color:white;
+    }
+    .button{
+       background-color: black;
+        color: blanchedalmond;
+        padding: 12px;
+        border-radius: 12px;
+        width:100%;
+        cursor:pointer;
+        border:2px solid white;
+    }
+    #survey-form label{
+        justify-content: left;
+        text-align: left;
+    }
+    #omg{
+        display: flex;
+        float:left;
+        color: white;
+    }
+    .d{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        color:white;
+    }
+    #one{
+      display:flex;
+      margin:auto;
+    }
+    #two{
+        display: flex;
+         margin: auto;
+    }
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    color: blanchedalmond;
+    margin-top: 80px;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+footer .center{
+    width: 100%;
+}
+</style>
+<body>
+    <div class="main">
+        <h1 id="title">VACCINATION SURVEY FORM</h1>
+        <h3>Fill correct details regarding vaccination</h3>
+    </div>
+    <div class="main-content">
+        <div class="form-content">
+            <form action="so.php" method="post" id="survey-form">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" placeholder="Enter your name" name="firstname">
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email" placeholder="Enter your email" name="email">
+                <label for="aadhar no">AADHAR NO:</label>
+                <input type="text" id="aadhar no" placeholder="Enter aadhar no" name="aadhar">
+                <label for="phone no">PHONE NO:</label>
+                <input type="text" id="phone no" placeholder="Enter phone no" name="phone">
+                <div id="omg">
+                <lable for="vaccinated">VACCINATED:</lable>
+                </div>
+                <input type="text" id="vaccination" placeholder="DONE or NOT DONE" name="vaccine">
+               
+                    <br>
+                    <input class="button" type="submit" name="save" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="center">
+    <p>if you have not vaccinated follow given website for registration</p>
+    copyright &copy;www.cowin.gov.in
+    </div>
+    </footer>
+</body>
+</html>
